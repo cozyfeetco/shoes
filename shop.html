@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Feet Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1> Welcome To Our Exclusive Premium Shoes Products</h1>
+        <p class="company-name"><strong>COZY FEET CO.</strong></p>
+    </header>
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="shop.html">
+                    <span class="icon"><ion-icon name="bag-handle-outline"></ion-icon></span>
+                    <span class="text">Shop</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="comments.html">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="text">Comments</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contactus.html">
+                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="text">Contact Us</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="chatbot-outline"></ion-icon></span>
+                    <span class="text">AI Bot</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <div class="products">
+        <div class="product">
+            <img src="Brownshoes.png" alt="Brown Shoes">
+            <p>Brown Shoes - ₹1,200</p>
+            <button class="add-to-cart" data-name="Brown Shoes" data-price="1200">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Classicshoes.png" alt="Classic Shoes">
+            <p>Classic Shoes - ₹1,600</p>
+            <button class="add-to-cart" data-name="Classic Shoes" data-price="1600">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Swordshoes.png" alt="Sword Shoes">
+            <p>Sword Shoes - ₹1,900</p>
+            <button class="add-to-cart" data-name="Sword Shoes" data-price="1900">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Tanshoes.png" alt="Tan Shoes">
+            <p>Tan Shoes - ₹999</p>
+            <button class="add-to-cart" data-name="Tan Shoes" data-price="999">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Greatsneakers.png" alt="Great Sneakers">
+            <p>Great Sneakers - ₹1,199</p>
+            <button class="add-to-cart" data-name="Great Sneakers" data-price="1199">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Highsneakers.png" alt="High Sneakers">
+            <p>High Sneakers - ₹1,400</p>
+            <button class="add-to-cart" data-name="High Sneakers" data-price="1400">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Partiesshoes.png" alt="Parties Shoes">
+            <p>Parties Shoes - ₹1,299</p>
+            <button class="add-to-cart" data-name="Parties Shoes" data-price="1299">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Sneakers.png" alt="Sneakers">
+            <p>Sneakers - ₹799</p>
+            <button class="add-to-cart" data-name="Sneakers" data-price="799">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="billing-container">
+        <div class="billing-box">
+            <h2>Billing Summary</h2>
+            <p><strong>Total Pairs:</strong> <span id="totalPairs">0</span></p>
+            <p><strong>Total Price:</strong> ₹<span id="totalPrice">0</span></p>
+        </div>
+    
+        <div class="place-order-box">
+            <h2>Place Order</h2>
+            <form action="https://formspree.io/f/mgvoyyal" method="POST">
+                <label>Enter Your Name: <input type="text" name="customer_name" required></label>
+                <label>Enter Your Phone Number: <input type="text" name="customer_phone" required></label>
+                
+                <label>Select Shoe Size:
+                    <select name="shoe_size">
+                        <option value="6">Size 6</option>
+                        <option value="7">Size 7</option>
+                        <option value="8">Size 8</option>
+                        <option value="9">Size 9</option>
+                        <option value="10">Size 10</option>
+                    </select>
+                </label>
+    
+                <label>Select Your Product:
+                    <select name="selected_product">
+                        <option value="Brown Shoes - ₹1,200">Brown Shoes - ₹1,200</option>
+                        <option value="Classic Shoes - ₹1,600">Classic Shoes - ₹1,600</option>
+                        <option value="Sword Shoes - ₹1,900">Sword Shoes - ₹1,900</option>
+                        <option value="Tan Shoes - ₹999">Tan Shoes - ₹999</option>
+                        <option value="Great Sneakers - ₹1,199">Great Sneakers - ₹1,199</option>
+                        <option value="High Sneakers - ₹1,400">High Sneakers - ₹1,400</option>
+                        <option value="Parties Shoes - ₹1,299">Parties Shoes - ₹1,299</option>
+                        <option value="Sneakers - ₹799">Sneakers - ₹799</option>
+                    </select>
+                </label>
+    
+                <button type="submit" class="place-order-button">Place Order</button>
+            </form>
+        </div>
+    </div>

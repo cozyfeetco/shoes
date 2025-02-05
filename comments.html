@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Feet Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="shop.html">
+                    <span class="icon"><ion-icon name="bag-handle-outline"></ion-icon></span>
+                    <span class="text">Shop</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="comments.html">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="text">Comments</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contactus.html">
+                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="text">Contact Us</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="about.html">
+                    <span class="icon"><ion-icon name="chatbot-outline"></ion-icon></span>
+                    <span class="text">AI Bot</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .feedback-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+    .feedback-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    .feedback-form input:focus,
+    .feedback-form textarea:focus,
+    .feedback-form select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    .feedback-form select {
+      appearance: none;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .feedback-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .feedback-form button:hover {
+      background-color: #0056b3;
+    }
+    .feedback-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="feedback-form">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm" action="https://formspree.io/f/mgvoyyal" method="POST">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <label for="rating">How is our shoe website?</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="Very Bad">Very Bad</option>
+        <option value="Very Nice">Very Nice</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Outstanding">Outstanding</option>
+      </select>
+      <textarea name="feedback" placeholder="Type your feedback here..." rows="4" required></textarea>
+      <button type="submit" class="feedback-form">Submit</button>
+    </form>
+  </div>
